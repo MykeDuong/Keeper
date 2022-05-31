@@ -1,13 +1,14 @@
 import React from "react";
 
-var title = "This is the note title";
-var content = "This is the note content";
+function Note(props) {
 
-function Note() {
+    const id = props.id;
+
     return (
         <div className="note">
-            <h1>{title}</h1>
-            <p>{content}</p>
+            <h1>{props.title}</h1>
+            <p>{props.content}</p>
+            <button onClick={() => props.onDelete(id)} >DELETE</button>
         </div>
     );
 };
