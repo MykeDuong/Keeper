@@ -6,6 +6,3 @@ ReactDOM.render(
     <App />,
     document.getElementById("root")
 );
-
-// Implement add functionality
-// Implement delete functionality
